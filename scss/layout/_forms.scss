@@ -1,0 +1,125 @@
+body {
+  font-family: map-get($fonts, 'body');
+  color: map-get($colors, 'primary');
+  background: map-get($colors, 'white');
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+//   margin: 0 auto;
+//   overflow: hidden;
+}
+
+
+.hero {
+  position: relative;
+  height: 600px;
+  background: map-get($colors, 'secondary');
+  color: map-get($colors, 'white');
+  padding-top: 16.5rem;
+  padding-left: 16.5rem;
+
+  &__content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 12rem;
+    // max-width: 1110px;
+
+    // &__text{
+    //     width: 540px;
+
+    // }
+    h1 {
+      font-family: map-get($fonts, 'heading');
+      @include text-style(72px, 400, 64px, -1px);
+      margin-bottom: 16px;
+    }
+
+    p {
+      @include text-style(16px, 400, 26px, 0);
+      margin-bottom: 32px;
+    }
+  }
+
+  &__pattern {
+    position: absolute;
+    right: -165px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+.hero__text{
+    width: 540px;
+}
+.hero__image{
+    // position: absolute;
+}
+// Features Section
+.features {
+  padding: 165px;
+  position: relative;
+
+  &__title {
+    font-family: map-get($fonts, 'heading');
+    @include text-style(72px, 400, 64px, -1px);
+    margin-bottom: 96px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    .icon {
+      width: 86px;
+      height: 86px;
+      background: map-get($colors, 'accent');
+      border-radius: 50%;
+      @include flex-center;
+      margin-bottom: 32px;
+    }
+
+    h3 {
+      font-family: map-get($fonts, 'heading');
+      @include text-style(28px, 400, 38px, -0.39px);
+      margin-bottom: 16px;
+    }
+
+    p {
+      @include text-style(16px, 400, 26px, 0);
+      color: map-get($colors, 'text-gray');
+    }
+  }
+}
+
+// CTA Section
+.cta {
+  background: map-get($colors, 'secondary');
+  color: map-get($colors, 'white');
+  padding: 80px 165px;
+  margin: 160px 165px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-family: map-get($fonts, 'heading');
+    @include text-style(56px, 400, 56px, -0.78px);
+    max-width: 475px;
+  }
+
+  &__pattern {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

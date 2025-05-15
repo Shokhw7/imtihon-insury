@@ -1,0 +1,23 @@
+$colors: (
+  'white': #FFFFFF,
+  'black': #000000,
+  'primary': #2C2830,
+  'secondary': #2D2641,
+  'accent': #96A9C6,
+  'text-dark': #24303E,
+  'text-gray': #837D88,
+  'text-light': #A7AAAD,
+  'background': #FAFAFA,
+  'border': #DADADA
+);
+
+$fonts: (
+  'heading': ('DM Serif Display', serif),
+  'body': ('Karla', sans-serif)
+);
+
+$breakpoints: (
+  'mobile': 375px,
+  'tablet': 768px,
+  'desktop': 1440px
+);

@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  @include text-style(13px, 700, 15px, 1.5px);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1.5px solid;
+  transition: all 0.3s ease;
+
+  &--primary {
+    background: transparent;
+    color: map-get($colors, 'white');
+    border-color: map-get($colors, 'white');
+
+    &:hover {
+      background: map-get($colors, 'white');
+      color: map-get($colors, 'primary');
+    }
+  }
+
+  &--secondary {
+    background: transparent;
+    color: map-get($colors, 'primary');
+    border-color: map-get($colors, 'primary');
+
+    &:hover {
+      background: map-get($colors, 'primary');
+      color: map-get($colors, 'white');
+    }
+  }
+}

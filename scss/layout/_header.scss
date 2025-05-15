@@ -1,14 +1,39 @@
 .header {
+//   max-width: 1200px;
+  position: relative;
+  height: 80px;
+  background: map-get($colors, 'white');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+//   padding: 0 165px;
+
+  &__logo {
+    width: 111px;
+    height: 18px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 30px;
+
+    a {
+      @include text-style(13px, 700, 15px, 1.5px);
+      text-decoration: none;
+      color: map-get($colors, 'text-gray');
+      text-transform: uppercase;
+
+      &.active {
+        color: map-get($colors, 'primary');
+      }
+    }
+  }
 }
-.header__container {
+.header .container{
+    display: flex;
+    justify-content: space-between;
 }
-.container {
-}
-.sitenav {
-}
-.sitenav__list {
-}
-.sitenav__item {
-}
-.sitenav__link {
+.header__nav{
+    // text-align: center;
+    align-items: center;
 }

@@ -1,0 +1,48 @@
+.footer {
+  background: map-get($colors, 'background');
+  padding: 80px 165px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid rgba(map-get($colors, 'primary'), 0.1);
+  }
+
+  &__social {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    h4 {
+      @include text-style(13px, 700, 15px, 1.5px);
+      color: map-get($colors, 'text-gray');
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 16px;
+
+        a {
+          @include text-style(13px, 700, 15px, 1.5px);
+          color: map-get($colors, 'primary');
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
