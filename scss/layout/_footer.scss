@@ -18,8 +18,9 @@
 
   &__links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    // grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
 
     h4 {
       @include text-style(13px, 700, 15px, 1.5px);
