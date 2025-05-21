@@ -46,8 +46,6 @@ main {
   max-width: 1440px; // bu o'zgaruvchan
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 @media (max-width:375px){
@@ -60,25 +58,41 @@ main {
   height: auto;
 }
 .hero__image{
-  content: url(/images/image-rintro-mobile.jpg);
-  order: 1;
-  width: 300px;
-  height: auto;
+  content: url(/images/image-intro-mobile.jpg);
+  position: absolute;
+  padding-top: 0;
+  order: -1;
+  width: 375px;
+  height: 451px;
 }
+
+.cta{
+  
+}
+
 .features__grid{
   // grid-template-columns: repeat(1, 3fr);
   grid-template-columns: 1fr;
   // grid-template-columns: 1fr 1fr;
 }
 .insure__footer{
+  align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-   
+    text-align: center;
   }
+.footer{
+  margin-left: 16rem;
+}
 .footer__top{
   display: flex;
+  gap: 3.2rem;
   flex-direction: column;
 }
+}
+.footer__links {
+        justify-content: center;
 }
 
 @media (max-width:920px){

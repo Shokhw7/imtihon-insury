@@ -18,7 +18,7 @@
     gap: 30px;
 
     a {
-      @include text-style(13px, 700, 15px, 1.5px);
+      @include text-style(13px, 700, 15px, 1.5px); 
       text-decoration: none;
       color: map-get($colors, 'text-gray');
       text-transform: uppercase;
