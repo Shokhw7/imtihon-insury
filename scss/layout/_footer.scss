@@ -1,6 +1,9 @@
 .footer {
   background: map-get($colors, 'background');
   padding-top: 8rem;
+  padding-left: 13rem;
+  padding-right: 13rem;
+
   &__top {
     display: flex;
     justify-content: space-between;
