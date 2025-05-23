@@ -31,7 +31,11 @@
 }
 .header .container{
     display: flex;
+    width: 1110px;
     justify-content: space-between;
+    // padding-left: 16.1rem;
+    gap: 54.8rem;
+    // padding-right: 16.1rem;
 }
 .header__nav{
     // text-align: center;
